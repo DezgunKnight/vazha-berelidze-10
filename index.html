@@ -14,39 +14,41 @@
 
 
     <header class="header-bg">
-        <div class="nav-div">
-            <a href="index.html">
-                <img class="img-logo" src="images/logo.svg" alt="logo-img">
-            </a>
-            <nav>
-                <ul class="header-ul">
-                    <li class="li-1">
-                        <a class="header-a" href="index.html">HOME</a>
-                    </li>
-                    <li class="li-1">
-                        <a class="header-a" href="index.html">ROOMS</a>
-                    </li>
-                    <li class="li-1">
-                        <a class="header-a" href="index.html">RESTAURANT</a>
-                    </li>
-                    <li class="li-1">
-                        <a class="header-a" href="index.html">ABOUT US</a>
-                    </li>
-                    <li class="li-1">
-                        <a class="header-a" href="index.html">BLOG</a>
-                    </li>
-                    <li class="li-1">
-                        <a class="header-a" href="index.html">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-div">
-            <span class="header-span">Contact</span>
-            <div class="header-flex">
-                <span class="header-span2">Home</span>
-                <div class="line"> </div>
-                <span class="header-span2">Contact</span>
+        <div class="header-container">
+            <div class="nav-div">
+                <a href="index.html">
+                    <img class="img-logo" src="images/logo.svg" alt="logo-img">
+                </a>
+                <nav>
+                    <ul class="header-ul">
+                        <li class="li-1">
+                            <a class="header-a" href="index.html">HOME</a>
+                        </li>
+                        <li class="li-1">
+                            <a class="header-a" href="index.html">ROOMS</a>
+                        </li>
+                        <li class="li-1">
+                            <a class="header-a" href="index.html">RESTAURANT</a>
+                        </li>
+                        <li class="li-1">
+                            <a class="header-a" href="index.html">ABOUT US</a>
+                        </li>
+                        <li class="li-1">
+                            <a class="header-a" href="index.html">BLOG</a>
+                        </li>
+                        <li class="li-1">
+                            <a class="header-a" href="index.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div-of-span">
+                <span class="header-span">Contact</span>
+                <div class="header-flex-div">
+                    <span class="header-span2">Home</span>
+                    <div class="line"> </div>
+                    <span class="header-span2">Contact</span>
+                </div>
             </div>
         </div>
     </header>
@@ -62,14 +64,41 @@
     <!-- Second section -->
 
     <section>
-        <div class="sec2-text">
-            <p class="sec2-p1">CONTACT</p>
-            <h3 class="sec2-h3">Contact us to get free support</h3>
-        </div>
+        <div class="sec2-container">
+            <div class="sec2-text">
+                <p class="sec2-p1">CONTACT</p>
+                <h3 class="sec2-h3">Contact us to get free support</h3>
+            </div>
+            <div class="container-form">
+                <div class="div-form1">
+                    <form class="form-1" action="/action-page.php">
+                        <label for="description">Description</label>
+                        <textarea class="textarea" name="message" id="description" placeholder="description.."></textarea>
+                    </form>
+                </div>
+                <div class="div-form2">
+                    <form class="form2" action="index.html">
+                        <div class="div2-form2">
+                            <label for="subject">Subject</label>
+                            <input class="input-form" type="text" id="subject" name="subject" placeholder="Subject.." required>
+                        </div>
+                        <div class="div2-form2">
+                            <label for="name-username">Name/UserName</label>
+                            <input class="input-form" type="text" id="fname-lname" name="name-username" placeholder="Name/Username.." required>
+                        </div>
+                        <div class="div2-form2">
+                            <label for="email">Enter Your Email:</label>
+                            <input class="input-form" type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                            <button class="submit" type="submit" value="submit">
+                                Send
+                                <img class="submit-logo" src="images/submit.svg" alt="submit-logo">
 
-        <form action="">
-            
-        </form>
+                            </button>  
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
